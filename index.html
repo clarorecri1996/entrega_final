@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="estilos/style.css">
+    <!--Font Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@1,700&display=swap" rel="stylesheet">
+
+<body>
+    <header class="navegation">
+        <h1 class="logo">Impresiones VK</h1>
+        <nav class="navTop">
+            <i id="changuito" class="fa-sharp fa-regular fa-cart-shopping">
+                <span id="cantidadCarrito" class="cantidad_carrito"></span>
+            </i>
+            <i id="user" class="fa-solid fa-user"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="productos" id="main">
+            
+        </div>
+    </main>
+    
+    <!--modal-->
+    <div id="modalContainer" class="modalContainer"></div>
+
+    <script src="script/productos.js"></script>
+    <script src="script/javascript.js"></script>
+    <script src="script/carrito.js"></script>
+
+</body>
+</html>

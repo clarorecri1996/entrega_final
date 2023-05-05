@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+body .navegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b0a7a7;
+  z-index: 3;
+}
+body .navegation .logo {
+  font-size: 30px;
+  font-family: "Carlito", sans-serif;
+  color: #fff;
+}
+body .navegation .navTop i {
+  font-size: 25px;
+  color: cornflowerblue;
+  padding: 10px;
+}
+body .navegation .navTop i:hover {
+  color: rgb(13, 57, 139);
+}
+body .navegation .navTop i .cantidad_carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 45px;
+  position: absolute;
+  display: none;
+}
+body main .productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin: 35px 57px;
+}
+body main .productos .card {
+  border: solid 3px rgb(91, 91, 91);
+  border-radius: 3%;
+  text-align: center;
+  background-image: url(https://media.istockphoto.com/id/1172688734/es/foto/papel-de-dos-colores.jpg?b=1&s=170667a&w=0&k=20&c=KHfNq1ACTDN3pPVKSXhg8-wI1-jbnkg1UPNjJYwZuVM=);
+}
+body main .productos .card img {
+  width: 350px;
+  margin-top: 30px;
+  border-radius: 6%;
+  border: solid 5px black;
+}
+body main .productos .card h3 {
+  font-size: 30px;
+}
+body main .productos .card button {
+  font-size: 15px;
+  padding: 10px;
+  border: solid 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+body .modalContainer::-webkit-scrollbar {
+  display: none;
+}
+body .modalContainer {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+body .modalContainer .modalTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121212;
+  color: #fff;
+  width: 100%;
+}
+body .modalContainer .modalContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+  background-color: #b0a7a7;
+}
+body .modalContainer .modalContent img {
+  width: 100px;
+  margin: 20px;
+}
+body .modalContainer .modalContent h3 {
+  margin-right: 30px;
+}
+body .modalContainer .modalContent .resta {
+  cursor: pointer;
+}
+body .modalContainer .modalContent .suma {
+  cursor: pointer;
+}
+body .modalContainer .totalContent {
+  font-size: 40px;
+}
+body .modalContainer .borrar {
+  font-size: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
