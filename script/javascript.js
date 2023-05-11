@@ -4,14 +4,11 @@ let modal= document.getElementById("modalContainer")
 const cantidadCarrito = document.getElementById("cantidadCarrito")
 
 let carrito = JSON.parse(localStorage.getItem("carrito"))|| []
+
 const getproductos = async () => {
 const response = await fetch("data.json")
 const data = await response.json()
-consol.log(data)
-}
-getproductos()
-//Creando catalogo
-productos.forEach((producto) =>{
+data.forEach((producto) =>{
     let contenido =document.createElement("div")
     contenido.className="card"
     contenido.innerHTML=`
@@ -51,3 +48,6 @@ productos.forEach((producto) =>{
     });
 
 });
+}
+getproductos()
+//Creando catalogo
